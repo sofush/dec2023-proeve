@@ -1,7 +1,5 @@
-import java.io.FileNotFoundException;
-
 public class Main {
     public static void main(String[] args) {
-        Fem.main(args);
+        Seks.main(args);
     }
 }
