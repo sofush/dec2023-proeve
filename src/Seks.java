@@ -1,7 +1,7 @@
 import java.util.ArrayList;
-import java.util.Comparator;
+import java.util.List;
 
-public class Karakterer {
+class Karakterer {
     //karakterListe skal indeholde alle elevers karakterer
     private ArrayList<Integer> karakterListe;
 
@@ -92,6 +92,36 @@ public class Karakterer {
 
 public class Seks {
     public static void main(String[] args) {
-        
+        Karakterer klasseA = new Karakterer();
+
+        // b)
+        {
+            List<Integer> karakterListe = List.of(2, 4, 7, 0, -3, 7, 10, 12, 12, 7, 2, 7, 4, 10, 10, 12, 0, 7, 7, 4);
+            for (int karakter : karakterListe) {
+                klasseA.tilfoejkarakter(karakter);
+            }
+        }
+
+        // c)
+        {
+            System.out.printf("""
+                Information om klasse A:
+                    Antal karakterer: %d
+                    Mindste karakter: %d
+                    Største karakter: %d
+                    Gennemsnittet for karakterer: %f
+                    Antal beståede elever: %d
+                    Antal elever med 7 taller: %d
+                    Antal elever med mindst et 10 tal: %d
+                """,
+                    klasseA.antalKarakterer(),
+                    klasseA.min(),
+                    klasseA.max(),
+                    klasseA.snit(),
+                    klasseA.antalBestaet(),
+                    klasseA.antalMedKar(7),
+                    klasseA.antalMedMindstKar(10)
+            );
+        }
     }
 }
