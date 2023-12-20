@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Et {
     public static void main(String[] args) {
+        System.out.println("Beregner gennemsnit af 8 heltal.");
         Scanner sc = new Scanner(System.in);
 
         int sum = 0;

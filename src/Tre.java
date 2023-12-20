@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class Tre {
     public static void main(String[] args) {
+        System.out.println("Beregner gennemsnittet, mindsteværdi og maksværdi af mange heltal.");
+        System.out.println("Indtast `0` for at slutte input.");
         Scanner sc = new Scanner(System.in);
 
         int min = Integer.MAX_VALUE;

@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class Fire {
     public static void main(String[] args) throws FileNotFoundException {
+        System.out.println("Beregner gennemsnittet, mindsteværdi og maksværdi af mange heltal fra en tekstfil.");
+
         Path sti = Path.of("./input/fire.txt");
         File file = new File(sti.toUri());
         Scanner sc = new Scanner(file);

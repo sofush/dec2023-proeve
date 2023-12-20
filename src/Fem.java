@@ -14,6 +14,7 @@ public class Fem {
     }
 
     public static void main(String[] args) {
+        System.out.println("Printer forekomster af hhv. bogstaverne 'a', 'b' og 'c' i følgende char array: abacb");
         char[] arr = new char[5];
         arr[0] = 'a';
         arr[1] = 'b';
